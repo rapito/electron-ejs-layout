@@ -2,7 +2,7 @@
   "name": "electron-ejs-layout",
   "version": "0.1.0",
   "description": "Simple Electron plugin for render EJS templates + layout.",
-  "keywords": ["electron", "ejs"],
+  "keywords": ["electron", "ejs", "layout"],
   "author": "Jérémie Payet <payet.jeremie@gmail.com>",
   "main": "./index.js",
   "repository": { "type": "git", "url": "git://github.com/jpcweb/electron-ejs.git" },
