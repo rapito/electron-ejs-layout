@@ -41,6 +41,17 @@ function ElectronEjs(options)
 
         //Get the full file
         var full = ejs.render(content, options)
+        /***
+         * Set a conf object in your electron main file
+         * The conf object contains a layoutViewPath and a layoutFile fields
+         * */
+        if(typeof conf.layout!=="undefined" && conf.layout) {
+          /* Set the body content */
+          body = ejs.render(content, options);
+          /* And then render the layout */
+          contentLayout = fs.readFileSync(conf.layoutViewPath+conf.layoutFile, 'utf8');
+          full = ejs.render(contentLayout, options);
+        }
 
         //Return the callback
         return callback({data: new Buffer(full), mimeType:'text/html'});
