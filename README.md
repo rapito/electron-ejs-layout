@@ -1,7 +1,7 @@
 # electron-ejs-layout
 
-[![npm](https://img.shields.io/npm/v/electron-ejs.svg?style=flat-square)](https://www.npmjs.com/package/electron-ejs-layout)
-[![npm](https://img.shields.io/npm/dt/electron-ejs.svg?style=flat-square)](https://www.npmjs.com/package/electron-ejs-layout)
+[![npm](https://img.shields.io/npm/v/electron-ejs-layout.svg?style=flat-square)](https://www.npmjs.com/package/electron-ejs-layout)
+[![npm](https://img.shields.io/npm/dt/electron-ejs-layout.svg?style=flat-square)](https://www.npmjs.com/package/electron-ejs-layout)
 
 Simple Electron plugin for render EJS templates. It allow you to use `ejs` files in your electron projects and you can define some layouts.
 
