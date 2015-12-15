@@ -45,7 +45,7 @@ function ElectronEjs(options)
          * Set a conf object in your electron main file
          * The conf object contains a layoutViewPath and a layoutFile fields
          * */
-        if(typeof conf.layout!=="undefined" && conf.layout) {
+        if(typeof conf.layoutFile!=="undefined" && conf.layoutFile) {
           /* Set the body content */
           body = ejs.render(content, options);
           /* And then render the layout */
