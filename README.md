@@ -27,7 +27,7 @@ Where `locals` is an object where each key is used as a variable in your templat
 
 ## Issues
 
-You can publish issues here https://github.com/jpcweb/electron-ejs/issues
+You can publish issues here https://github.com/jpcweb/electron-ejs-layout/issues
 
 ## License
 
