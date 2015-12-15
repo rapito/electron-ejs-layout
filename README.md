@@ -3,22 +3,23 @@
 [![npm](https://img.shields.io/npm/v/electron-ejs.svg?style=flat-square)](https://www.npmjs.com/package/electron-ejs)
 [![npm](https://img.shields.io/npm/dt/electron-ejs.svg?style=flat-square)](https://www.npmjs.com/package/electron-ejs)
 
-Simple Electron plugin for render EJS templates. It allow you to use `ejs` files in your electron projects.
+Simple Electron plugin for render EJS templates. It allow you to use `ejs` files in your electron projects and you can define some layouts.
 
 
 ## How to use it
 
-First, install **electron-ejs** using NPM:
-
-```sh
-npm install electron-ejs
-```
-
 For initialize **electron-ejs** on your project, simply add
 
 ```javascript
-//Import template parser
+//In main process.
 var electronEjs = require('electron-ejs')(locals);
+conf = {
+    layoutViewPath: __dirname+'/views/'
+};
+...
+//You have to define layoutFile
+conf.layoutFile = 'layout.ejs';
+mainWindow.loadURL('file://'+__dirname+'/views/main/main.ejs');
 ```
 
 Where `locals` is an object where each key is used as a variable in your template.
