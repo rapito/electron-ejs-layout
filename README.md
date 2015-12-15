@@ -10,7 +10,9 @@ Simple Electron plugin for render EJS templates. It allow you to use `ejs` files
 
 Install with npm
 
+```sh
 npm install electron-ejs-layout
+```
 
 For initialize **electron-ejs-layout** on your project, simply add
 
