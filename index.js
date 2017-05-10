@@ -37,8 +37,12 @@ function ElectronEjs(options)
       //Get the file extension
       var extension = path.extname(file);
 
+      //Get the mime type
+      var mimet = mime.lookup(extension);
+
       //Get the file content
-      var content = fs.readFileSync(file, 'utf8');
+      // if image, read without encoding
+      var content = mimet.indexOf('image') >= 0 ? fs.readFileSync(file) : fs.readFileSync(file, 'utf8');
 
       //Check the extension
       if(extension === '.ejs')
@@ -65,9 +69,6 @@ function ElectronEjs(options)
       }
       else
       {
-        //Get the mime type
-        var mimet = mime.lookup(extension);
-
         //Return the callback
         return callback({data: new Buffer(content), mimeType: mimet});
       }
