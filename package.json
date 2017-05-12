@@ -1,6 +1,6 @@
 {
   "name": "electron-ejs-layout",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Simple Electron plugin for render EJS templates + layout.",
   "keywords": [
     "electron",
